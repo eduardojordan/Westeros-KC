@@ -50,23 +50,43 @@ class HouseTests: XCTestCase {
     }
     
     // Given - When - Then
-//    func testHouse_AddPersons_ReturnsTheCorrectCountOfPersons() {
-//        XCTAssertEqual(starkHouse.count, 0)
-//        starkHouse.add(person: robb)
-//        starkHouse.add(person: robb)
-//        starkHouse.add(person: robb)
-//        
-//        XCTAssertEqual(starkHouse.count, 1)
-//        
-//        starkHouse.add(person: arya)
-//        XCTAssertEqual(starkHouse.count, 2)
-//        
-//        XCTAssertEqual(lannisterHouse.count, 0)
-//        lannisterHouse.add(person: tyrion)
-//        
-//        XCTAssertEqual(lannisterHouse.count, 1)
-//        
-//        starkHouse.add(person: tyrion)
-//        XCTAssertEqual(starkHouse.count, 2)
-//   }
+    func testHouse_AddPersons_ReturnsTheCorrectCountOfPersons() {
+        XCTAssertEqual(starkHouse.count, 0)
+        starkHouse.add(person: robb)
+        starkHouse.add(person: robb)
+        starkHouse.add(person: robb)
+        
+        XCTAssertEqual(starkHouse.count, 1)
+        
+        starkHouse.add(person: arya)
+        XCTAssertEqual(starkHouse.count, 2)
+        
+        XCTAssertEqual(lannisterHouse.count, 0)
+        lannisterHouse.add(person: tyrion)
+        
+        XCTAssertEqual(lannisterHouse.count, 1)
+        
+        starkHouse.add(person: tyrion)
+        XCTAssertEqual(starkHouse.count, 2)
+   }
+    
+    func testHouseEquality() {
+        // 1. Identidad
+        XCTAssertEqual(starkHouse, starkHouse)
+        
+        // 2. Igualdad
+        let jinxed = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno")
+        XCTAssertEqual(jinxed, starkHouse)
+        
+        // 3. Desigualdad
+        XCTAssertNotEqual(starkHouse, lannisterHouse)
+    }
+    
+    func testHouseHashable() {
+        XCTAssertNotNil(starkHouse.hashValue)
+    }
+    
+    func testHouseComparison() {
+        XCTAssertLessThan(lannisterHouse, starkHouse)
+    }
 }
