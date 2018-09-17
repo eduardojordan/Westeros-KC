@@ -20,6 +20,9 @@
 		A0BA572C2149A32800547947 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA572A2149A32800547947 /* HouseDetailViewController.swift */; };
 		A0BA572D2149A32800547947 /* HouseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BA572B2149A32800547947 /* HouseDetailViewController.xib */; };
 		A0CD13592144804B00659CD9 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD13582144804B00659CD9 /* PersonTest.swift */; };
+		A0D89AB1214FBAAB00AE2AB9 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB0214FBAAB00AE2AB9 /* UIViewController+Navigation.swift */; };
+		A0D89AB3214FBB9E00AE2AB9 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB2214FBB9E00AE2AB9 /* RepositoryTest.swift */; };
+		A0D89AB7214FBD6500AE2AB9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB6214FBD6500AE2AB9 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		A0BA572A2149A32800547947 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
 		A0BA572B2149A32800547947 /* HouseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailViewController.xib; sourceTree = "<group>"; };
 		A0CD13582144804B00659CD9 /* PersonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
+		A0D89AB0214FBAAB00AE2AB9 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		A0D89AB2214FBB9E00AE2AB9 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
+		A0D89AB6214FBD6500AE2AB9 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,7 @@
 				A05C82C22141BBF2003DA04A /* HouseTest.swift */,
 				A0CD13582144804B00659CD9 /* PersonTest.swift */,
 				A05C82C12141BBF2003DA04A /* WesterosTests-Bridging-Header.h */,
+				A0D89AB2214FBB9E00AE2AB9 /* RepositoryTest.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 		A05C82C42141BD76003DA04A /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A0D89AB4214FBD3F00AE2AB9 /* Repositories */,
 				A05C82C52141BD97003DA04A /* House.swift */,
 				A05C82C72141C238003DA04A /* Sigil.swift */,
 				A05C82CD2141C92C003DA04A /* Person.swift */,
@@ -147,8 +155,17 @@
 		A0BA572E2149B9B300547947 /* Additions */ = {
 			isa = PBXGroup;
 			children = (
+				A0D89AB0214FBAAB00AE2AB9 /* UIViewController+Navigation.swift */,
 			);
 			path = Additions;
+			sourceTree = "<group>";
+		};
+		A0D89AB4214FBD3F00AE2AB9 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A0D89AB6214FBD6500AE2AB9 /* Repository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D89AB7214FBD6500AE2AB9 /* Repository.swift in Sources */,
+				A0D89AB1214FBAAB00AE2AB9 /* UIViewController+Navigation.swift in Sources */,
 				A0BA572C2149A32800547947 /* HouseDetailViewController.swift in Sources */,
 				A05C82C82141C238003DA04A /* Sigil.swift in Sources */,
 				A05C82C62141BD97003DA04A /* House.swift in Sources */,
@@ -270,6 +289,7 @@
 			files = (
 				A05C82C32141BBF2003DA04A /* HouseTest.swift in Sources */,
 				A0CD13592144804B00659CD9 /* PersonTest.swift in Sources */,
+				A0D89AB3214FBB9E00AE2AB9 /* RepositoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

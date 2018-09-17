@@ -15,12 +15,14 @@ final class House {
     let name: String
     let sigil: Sigil
     let words: Words
+    let wikiUrl: URL
     private var _members: Members
     
-    init(name: String, sigil: Sigil, words: Words) {
+    init(name: String, sigil: Sigil, words: Words, url: URL) {
         self.name = name
         self.sigil = sigil
         self.words = words
+        self.wikiUrl = url
         self._members = Members()
     }
 }
@@ -32,44 +34,45 @@ extension House {
     }
     
     func add(person: Person) {
-        
-        guard self.name == person.house.name else {
+        guard self == person.house else {
             return
         }
+        
         _members.insert(person)
     }
+    
+    func add(persons: Person...) {
+        persons.forEach { add(person: $0) }
+    }
+    
 }
 
 extension House {
-    var proxyforEquality: String{
-        return "\(name)\(words)\(count)"
+    var proxyForEquality: String {
+        return "\(words)\(name)\(count)"
     }
     
-    var proxyForComparison : String {
+    var proxyForComparison: String {
         return name.uppercased()
     }
 }
 
-extension House: Equatable{
-    static func == (lhs: House, rhs: House) -> Bool {
-    return lhs.proxyforEquality == rhs.proxyforEquality
-    
-  }
+extension House: Equatable {
+    static func ==(lhs: House, rhs: House) -> Bool {
+        return lhs.proxyForEquality == rhs.proxyForEquality
+    }
 }
 
-extension House : Hashable {
+extension House: Hashable {
     
-    var hashValue : Int {
-        return proxyforEquality.hashValue
-
-   }
+    var hashValue: Int {
+        return proxyForEquality.hashValue
+    }
 }
 
-    extension House : Comparable {
-        static func < (lhs: House, rhs: House) -> Bool {
-            //Orden alfabetico
-            return lhs.proxyForComparison < rhs.proxyForComparison
-            
-            
-        }
+extension House: Comparable {
+    static func < (lhs: House, rhs: House) -> Bool {
+        // Orden alfabetico
+        return lhs.proxyForComparison < rhs.proxyForComparison
+    }
 }

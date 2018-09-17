@@ -18,7 +18,10 @@ class PersonTests: XCTestCase {
     
     override func setUp() {
         starkSigil = Sigil(image: UIImage(), description: "Lobo Huargo")
-        starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno")
+        
+        let starkUrl = URL(string: "https://awoiaf.westeros.org/index.php/House_Stark")!
+        
+        starkHouse = House(name: "Stark", sigil: starkSigil, words: "Se acerca el invierno", url: starkUrl)
         ned = Person(name: "Eddard", alias: "Ned", house: starkHouse)
         arya = Person(name: "Arya", house: starkHouse)
     }
@@ -36,14 +39,16 @@ class PersonTests: XCTestCase {
         XCTAssertEqual(arya.fullName, "Arya Stark")
     }
     
-    func testPersonEquality (){
-        //1 comprobar la identidad
+    func testPersonEquality() {
+        // 1. Identidad
         XCTAssertEqual(ned, ned)
-        // 2 La igualdad
+        
+        // 2. Igualdad
         let eddard = Person(name: "Eddard", alias: "Ned", house: starkHouse)
         XCTAssertEqual(eddard, ned)
         
-        // 3 La desigualdad
+        // 3. Desigualdad
         XCTAssertNotEqual(ned, arya)
     }
+    
 }

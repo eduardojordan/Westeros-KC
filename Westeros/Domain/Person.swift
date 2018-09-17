@@ -8,8 +8,6 @@
 
 import Foundation
 
-
-
 final class Person {
     
     // Mark: - Properties
