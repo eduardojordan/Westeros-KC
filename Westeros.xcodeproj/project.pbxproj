@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A035A104215BC38000095769 /* SeasonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A035A103215BC38000095769 /* SeasonTest.swift */; };
 		A05C82A22141B363003DA04A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C82A12141B363003DA04A /* AppDelegate.swift */; };
 		A05C82A92141B364003DA04A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A05C82A82141B364003DA04A /* Assets.xcassets */; };
 		A05C82AC2141B364003DA04A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A05C82AA2141B364003DA04A /* LaunchScreen.storyboard */; };
@@ -14,15 +15,34 @@
 		A05C82C62141BD97003DA04A /* House.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C82C52141BD97003DA04A /* House.swift */; };
 		A05C82C82141C238003DA04A /* Sigil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C82C72141C238003DA04A /* Sigil.swift */; };
 		A05C82CE2141C92C003DA04A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05C82CD2141C92C003DA04A /* Person.swift */; };
+		A0997DCD215BC55F002639AF /* Season.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0997DCC215BC55F002639AF /* Season.swift */; };
+		A0B7C516215FDA0C00816A3A /* SeasonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7C514215FDA0C00816A3A /* SeasonListViewController.swift */; };
+		A0B7C517215FDA0C00816A3A /* SeasonListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B7C515215FDA0C00816A3A /* SeasonListViewController.xib */; };
+		A0B7C51A215FDA6A00816A3A /* SeasonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7C518215FDA6A00816A3A /* SeasonDetailViewController.swift */; };
+		A0B7C51B215FDA6A00816A3A /* SeasonDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B7C519215FDA6A00816A3A /* SeasonDetailViewController.xib */; };
+		A0B7C51E215FDAE300816A3A /* EpisodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7C51C215FDAE300816A3A /* EpisodeListViewController.swift */; };
+		A0B7C51F215FDAE300816A3A /* EpisodeListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B7C51D215FDAE300816A3A /* EpisodeListViewController.xib */; };
+		A0B7C522215FDB2D00816A3A /* EpisodeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B7C520215FDB2D00816A3A /* EpisodeDetailViewController.swift */; };
+		A0B7C523215FDB2D00816A3A /* EpisodeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B7C521215FDB2D00816A3A /* EpisodeDetailViewController.xib */; };
+		A0B8DF7021528AE000D41C61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8DF6F21528AE000D41C61 /* Constants.swift */; };
+		A0B8DF722152DACC00D41C61 /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B8DF712152DACC00D41C61 /* Notification+Name.swift */; };
 		A0BA57252149A1AB00547947 /* targaryenSmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0BA57222149A1AB00547947 /* targaryenSmall.jpg */; };
 		A0BA57262149A1AB00547947 /* lannister.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0BA57232149A1AB00547947 /* lannister.jpg */; };
 		A0BA57272149A1AB00547947 /* codeIsComing.png in Resources */ = {isa = PBXBuildFile; fileRef = A0BA57242149A1AB00547947 /* codeIsComing.png */; };
 		A0BA572C2149A32800547947 /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BA572A2149A32800547947 /* HouseDetailViewController.swift */; };
 		A0BA572D2149A32800547947 /* HouseDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BA572B2149A32800547947 /* HouseDetailViewController.xib */; };
 		A0CD13592144804B00659CD9 /* PersonTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CD13582144804B00659CD9 /* PersonTest.swift */; };
+		A0D5758C215C3C64004A58DD /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D5758B215C3C64004A58DD /* Episode.swift */; };
+		A0D5758E215D2C93004A58DD /* EpisodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D5758D215D2C93004A58DD /* EpisodeTest.swift */; };
 		A0D89AB1214FBAAB00AE2AB9 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB0214FBAAB00AE2AB9 /* UIViewController+Navigation.swift */; };
 		A0D89AB3214FBB9E00AE2AB9 /* RepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB2214FBB9E00AE2AB9 /* RepositoryTest.swift */; };
 		A0D89AB7214FBD6500AE2AB9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB6214FBD6500AE2AB9 /* Repository.swift */; };
+		A0D89ABA2150336C00AE2AB9 /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89AB82150336C00AE2AB9 /* WikiViewController.swift */; };
+		A0D89ABB2150336C00AE2AB9 /* WikiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D89AB92150336C00AE2AB9 /* WikiViewController.xib */; };
+		A0D89ABE215059D000AE2AB9 /* HouseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D89ABC215059D000AE2AB9 /* HouseListViewController.swift */; };
+		A0D89ABF215059D000AE2AB9 /* HouseListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0D89ABD215059D000AE2AB9 /* HouseListViewController.xib */; };
+		A0DB6EB8215189B600972001 /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DB6EB6215189B600972001 /* MemberListViewController.swift */; };
+		A0DB6EB9215189B600972001 /* MemberListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0DB6EB7215189B600972001 /* MemberListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A035A103215BC38000095769 /* SeasonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonTest.swift; sourceTree = "<group>"; };
 		A05C829E2141B363003DA04A /* Westeros.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Westeros.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05C82A12141B363003DA04A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A05C82A82141B364003DA04A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,15 +69,34 @@
 		A05C82C52141BD97003DA04A /* House.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = House.swift; sourceTree = "<group>"; };
 		A05C82C72141C238003DA04A /* Sigil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sigil.swift; sourceTree = "<group>"; };
 		A05C82CD2141C92C003DA04A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		A0997DCC215BC55F002639AF /* Season.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Season.swift; sourceTree = "<group>"; };
+		A0B7C514215FDA0C00816A3A /* SeasonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonListViewController.swift; sourceTree = "<group>"; };
+		A0B7C515215FDA0C00816A3A /* SeasonListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonListViewController.xib; sourceTree = "<group>"; };
+		A0B7C518215FDA6A00816A3A /* SeasonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeasonDetailViewController.swift; sourceTree = "<group>"; };
+		A0B7C519215FDA6A00816A3A /* SeasonDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeasonDetailViewController.xib; sourceTree = "<group>"; };
+		A0B7C51C215FDAE300816A3A /* EpisodeListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeListViewController.swift; sourceTree = "<group>"; };
+		A0B7C51D215FDAE300816A3A /* EpisodeListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeListViewController.xib; sourceTree = "<group>"; };
+		A0B7C520215FDB2D00816A3A /* EpisodeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeDetailViewController.swift; sourceTree = "<group>"; };
+		A0B7C521215FDB2D00816A3A /* EpisodeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeDetailViewController.xib; sourceTree = "<group>"; };
+		A0B8DF6F21528AE000D41C61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A0B8DF712152DACC00D41C61 /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Name.swift"; sourceTree = "<group>"; };
 		A0BA57222149A1AB00547947 /* targaryenSmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = targaryenSmall.jpg; sourceTree = "<group>"; };
 		A0BA57232149A1AB00547947 /* lannister.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lannister.jpg; sourceTree = "<group>"; };
 		A0BA57242149A1AB00547947 /* codeIsComing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codeIsComing.png; sourceTree = "<group>"; };
 		A0BA572A2149A32800547947 /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
 		A0BA572B2149A32800547947 /* HouseDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseDetailViewController.xib; sourceTree = "<group>"; };
 		A0CD13582144804B00659CD9 /* PersonTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTest.swift; sourceTree = "<group>"; };
+		A0D5758B215C3C64004A58DD /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		A0D5758D215D2C93004A58DD /* EpisodeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTest.swift; sourceTree = "<group>"; };
 		A0D89AB0214FBAAB00AE2AB9 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		A0D89AB2214FBB9E00AE2AB9 /* RepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTest.swift; sourceTree = "<group>"; };
 		A0D89AB6214FBD6500AE2AB9 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		A0D89AB82150336C00AE2AB9 /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		A0D89AB92150336C00AE2AB9 /* WikiViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikiViewController.xib; sourceTree = "<group>"; };
+		A0D89ABC215059D000AE2AB9 /* HouseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListViewController.swift; sourceTree = "<group>"; };
+		A0D89ABD215059D000AE2AB9 /* HouseListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HouseListViewController.xib; sourceTree = "<group>"; };
+		A0DB6EB6215189B600972001 /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
+		A0DB6EB7215189B600972001 /* MemberListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +138,7 @@
 		A05C82A02141B363003DA04A /* Westeros */ = {
 			isa = PBXGroup;
 			children = (
+				A0B8DF6F21528AE000D41C61 /* Constants.swift */,
 				A0BA572E2149B9B300547947 /* Additions */,
 				A0BA57292149A2A300547947 /* Controllers */,
 				A0BA57282149A1CA00547947 /* Resources */,
@@ -118,6 +159,8 @@
 				A0CD13582144804B00659CD9 /* PersonTest.swift */,
 				A05C82C12141BBF2003DA04A /* WesterosTests-Bridging-Header.h */,
 				A0D89AB2214FBB9E00AE2AB9 /* RepositoryTest.swift */,
+				A035A103215BC38000095769 /* SeasonTest.swift */,
+				A0D5758D215D2C93004A58DD /* EpisodeTest.swift */,
 			);
 			path = WesterosTests;
 			sourceTree = "<group>";
@@ -129,6 +172,8 @@
 				A05C82C52141BD97003DA04A /* House.swift */,
 				A05C82C72141C238003DA04A /* Sigil.swift */,
 				A05C82CD2141C92C003DA04A /* Person.swift */,
+				A0997DCC215BC55F002639AF /* Season.swift */,
+				A0D5758B215C3C64004A58DD /* Episode.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -146,8 +191,22 @@
 		A0BA57292149A2A300547947 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A0D89ABC215059D000AE2AB9 /* HouseListViewController.swift */,
+				A0D89ABD215059D000AE2AB9 /* HouseListViewController.xib */,
 				A0BA572A2149A32800547947 /* HouseDetailViewController.swift */,
 				A0BA572B2149A32800547947 /* HouseDetailViewController.xib */,
+				A0D89AB82150336C00AE2AB9 /* WikiViewController.swift */,
+				A0D89AB92150336C00AE2AB9 /* WikiViewController.xib */,
+				A0DB6EB6215189B600972001 /* MemberListViewController.swift */,
+				A0DB6EB7215189B600972001 /* MemberListViewController.xib */,
+				A0B7C514215FDA0C00816A3A /* SeasonListViewController.swift */,
+				A0B7C515215FDA0C00816A3A /* SeasonListViewController.xib */,
+				A0B7C518215FDA6A00816A3A /* SeasonDetailViewController.swift */,
+				A0B7C519215FDA6A00816A3A /* SeasonDetailViewController.xib */,
+				A0B7C51C215FDAE300816A3A /* EpisodeListViewController.swift */,
+				A0B7C51D215FDAE300816A3A /* EpisodeListViewController.xib */,
+				A0B7C520215FDB2D00816A3A /* EpisodeDetailViewController.swift */,
+				A0B7C521215FDB2D00816A3A /* EpisodeDetailViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -156,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				A0D89AB0214FBAAB00AE2AB9 /* UIViewController+Navigation.swift */,
+				A0B8DF712152DACC00D41C61 /* Notification+Name.swift */,
 			);
 			path = Additions;
 			sourceTree = "<group>";
@@ -251,9 +311,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0BA57262149A1AB00547947 /* lannister.jpg in Resources */,
+				A0D89ABB2150336C00AE2AB9 /* WikiViewController.xib in Resources */,
+				A0B7C51B215FDA6A00816A3A /* SeasonDetailViewController.xib in Resources */,
 				A05C82AC2141B364003DA04A /* LaunchScreen.storyboard in Resources */,
+				A0D89ABF215059D000AE2AB9 /* HouseListViewController.xib in Resources */,
+				A0DB6EB9215189B600972001 /* MemberListViewController.xib in Resources */,
+				A0B7C51F215FDAE300816A3A /* EpisodeListViewController.xib in Resources */,
+				A0B7C517215FDA0C00816A3A /* SeasonListViewController.xib in Resources */,
 				A0BA572D2149A32800547947 /* HouseDetailViewController.xib in Resources */,
 				A0BA57252149A1AB00547947 /* targaryenSmall.jpg in Resources */,
+				A0B7C523215FDB2D00816A3A /* EpisodeDetailViewController.xib in Resources */,
 				A0BA57272149A1AB00547947 /* codeIsComing.png in Resources */,
 				A05C82A92141B364003DA04A /* Assets.xcassets in Resources */,
 			);
@@ -274,12 +341,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0D89AB7214FBD6500AE2AB9 /* Repository.swift in Sources */,
+				A0B8DF7021528AE000D41C61 /* Constants.swift in Sources */,
 				A0D89AB1214FBAAB00AE2AB9 /* UIViewController+Navigation.swift in Sources */,
 				A0BA572C2149A32800547947 /* HouseDetailViewController.swift in Sources */,
+				A0B7C516215FDA0C00816A3A /* SeasonListViewController.swift in Sources */,
 				A05C82C82141C238003DA04A /* Sigil.swift in Sources */,
+				A0B8DF722152DACC00D41C61 /* Notification+Name.swift in Sources */,
+				A0DB6EB8215189B600972001 /* MemberListViewController.swift in Sources */,
 				A05C82C62141BD97003DA04A /* House.swift in Sources */,
+				A0997DCD215BC55F002639AF /* Season.swift in Sources */,
+				A0D5758C215C3C64004A58DD /* Episode.swift in Sources */,
 				A05C82A22141B363003DA04A /* AppDelegate.swift in Sources */,
+				A0B7C51E215FDAE300816A3A /* EpisodeListViewController.swift in Sources */,
+				A0B7C522215FDB2D00816A3A /* EpisodeDetailViewController.swift in Sources */,
+				A0B7C51A215FDA6A00816A3A /* SeasonDetailViewController.swift in Sources */,
+				A0D89ABA2150336C00AE2AB9 /* WikiViewController.swift in Sources */,
 				A05C82CE2141C92C003DA04A /* Person.swift in Sources */,
+				A0D89ABE215059D000AE2AB9 /* HouseListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +365,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A035A104215BC38000095769 /* SeasonTest.swift in Sources */,
+				A0D5758E215D2C93004A58DD /* EpisodeTest.swift in Sources */,
 				A05C82C32141BBF2003DA04A /* HouseTest.swift in Sources */,
 				A0CD13592144804B00659CD9 /* PersonTest.swift in Sources */,
 				A0D89AB3214FBB9E00AE2AB9 /* RepositoryTest.swift in Sources */,

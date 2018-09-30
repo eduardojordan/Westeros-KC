@@ -18,6 +18,10 @@ final class House {
     let wikiUrl: URL
     private var _members: Members
     
+    var sortedMembers: [Person]{
+        return _members.sorted()
+    }
+    
     init(name: String, sigil: Sigil, words: Words, url: URL) {
         self.name = name
         self.sigil = sigil
@@ -44,6 +48,7 @@ extension House {
     func add(persons: Person...) {
         persons.forEach { add(person: $0) }
     }
+    
     
 }
 
@@ -76,3 +81,5 @@ extension House: Comparable {
         return lhs.proxyForComparison < rhs.proxyForComparison
     }
 }
+
+

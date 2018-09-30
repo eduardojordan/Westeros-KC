@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+let HouseDidChangeNotificationName = "HouseDidChange"
+let SeasonDidChangeNotificationName = "SeasonDidChange"
+let HouseKey = "HouseKey"
+let SeasonKey = "SeasonKey"
+let lastHouseKey = "lastHouseKey"
+let lastSeasonKey = "lastSeasonKey"

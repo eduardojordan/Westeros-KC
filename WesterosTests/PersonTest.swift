@@ -51,4 +51,10 @@ class PersonTests: XCTestCase {
         XCTAssertNotEqual(ned, arya)
     }
     
+    func testPersonComparison(){
+        XCTAssertGreaterThan(ned, arya)
+    }
+    func testHouseSortedMembersReturnsASorted(){
+        
+    }
 }

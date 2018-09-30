@@ -17,12 +17,7 @@ final class Person {
     
     var alias: String {
         get{
-            //            if let alias = _alias {
-            //                // Existe y esta guardado dentro de _alias
-            //                return alias
-            //            } else {
-            //                return ""
-            //            }
+   
             return _alias ?? "" // Devuelveme _alias, si hay algo, y si no, ""
         }
     }
@@ -41,20 +36,31 @@ extension Person {
     }
 }
 
-extension Person {
-    var proxy: String {
+extension Person { // Identificar inequivocamnete una persona
+    var proxyForEquality: String {
         return "\(name)\(alias)\(house.name)"
+    }
+    var proxyForComparison: String { // ordenar
+        return fullName.uppercased()
     }
 }
 
 extension Person: Hashable {
     var hashValue: Int {
-        return proxy.hashValue
+        return proxyForEquality.hashValue
     }
 }
 
 extension Person: Equatable {
     static func ==(lhs: Person, rhs: Person) -> Bool {
-        return lhs.proxy == rhs.proxy
+        return lhs.proxyForEquality == rhs.proxyForEquality
     }
+    
+}
+
+extension Person : Comparable {
+    static func < (lhs: Person, rhs: Person) -> Bool{
+        return lhs.proxyForComparison < rhs.proxyForComparison
+}
+
 }
