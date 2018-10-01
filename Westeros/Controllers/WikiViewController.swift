@@ -16,16 +16,15 @@ class WikiViewController: UIViewController {
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
     
     // Mark: - Properties
-    var model: House
+        var model: House
     
     // Mark: - Initialization
-    init(model: House) {
-        // 1. Limpio mi M***
+        init(model: House) {
+    // 1. Limpio mi M***
         self.model = model
-        // 2. Llamo a super
+    // 2. Llamo a super
         super.init(nibName: nil, bundle: nil)
-        
-        // 3. Usas las properties de tu superclase
+     // 3. Usas las properties de tu superclase
         
     }
     
@@ -44,34 +43,33 @@ class WikiViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(houseDidChange), name: Notification.Name(HouseDidChangeNotificationName), object: nil) // object es quien lo manda
     }
     
-    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        // Aqui nos damos de baja en las notificaciones
-        // No nos interesa seguir recibiendo las actualizaciones de las casas
+    // Aqui nos damos de baja en las notificaciones
+    // No nos interesa seguir recibiendo las actualizaciones de las casas
         NotificationCenter.default.removeObserver(self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Asignar delegados
+    // Asignar delegados
         webView.navigationDelegate = self
         
         syncModelWithView()
         
     }
     
-    // MARK: Notifications
+   // MARK: Notifications
     @objc func houseDidChange(notification: Notification) {
         // sacar la info y  Extraer la casa
         guard let info = notification.userInfo,
             let house = info[HouseKey] as? House else { return }
         
-        // Actualizar el modelo
+    // Actualizar el modelo
         self.model = house
         
-        // Sincronizar modelo - vista
+    // Sincronizar modelo - vista
         syncModelWithView()
     }
     
@@ -87,9 +85,9 @@ class WikiViewController: UIViewController {
 
 extension WikiViewController: WKNavigationDelegate { // Should, Will, Did
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-        // detener el spinner
+    // detener el spinner
         loadingView.stopAnimating()
-        // Ocultarlo
+    // Ocultarlo
         loadingView.isHidden = true
     }
     

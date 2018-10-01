@@ -21,14 +21,12 @@ class HouseDetailViewController: UIViewController {
     @IBOutlet weak var wordsLabel: UILabel!
     
     // MARK: - Initialization
-    init(model: House) {
-        // Primero, limpio mi propio desorden (a.k.a, le doy valor a mis propias propiedades)
+        init(model: House) {
+    // Primero, limpio mi propio desorden (a.k.a, le doy valor a mis propias propiedades)
         self.model = model
-        
-        // Despues, llamamos a super
+    // Despues, llamamos a super
         super.init(nibName: nil, bundle: nil)
-        
-        // Si quieres, utilizas alguna propiedad de tu super clase
+    // Si quieres, utilizas alguna propiedad de tu super clase
         title = model.name
     }
     
@@ -42,7 +40,7 @@ class HouseDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setupUI()
-        // Sincronizar modelo y vista
+    // Sincronizar modelo y vista
         syncModelWithView()
     }
     
@@ -54,7 +52,6 @@ class HouseDetailViewController: UIViewController {
        
         title = model.name
     }
-    
     func setupUI() {
         // Crear los botones
         let wikiButton = UIBarButtonItem(title: "Wiki", style: .plain, target: self, action: #selector(displayWiki))
@@ -79,13 +76,10 @@ class HouseDetailViewController: UIViewController {
         navigationController?.pushViewController(memberListViewController, animated: true)
     }
 }
-
 extension HouseDetailViewController: HouseListViewControllerDelegate {
     func houseListViewController(_ vc: HouseListViewController, didSelectHouse house: House) {
         self.model = house
         syncModelWithView()
         
     }
-    
-    
 }

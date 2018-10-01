@@ -16,7 +16,6 @@ protocol HouseListViewControllerDelegate {
     func houseListViewController(_ vc: HouseListViewController, didSelectHouse house: House)
 }
 
-
 class HouseListViewController: UITableViewController {
     
     // Mark: - Properties
@@ -25,21 +24,22 @@ class HouseListViewController: UITableViewController {
     
     // Mark: - Initialization
     init(model: [House]) {
-        self.model = model
-        super.init(nibName: nil, bundle: nil)
-        title = "Westeros"
+    self.model = model
+    super.init(nibName: nil, bundle: nil)
+    title = "Westeros"
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    // MARK: - Table view data source
+    // Mark: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
         return model.count
     }
     
@@ -48,20 +48,20 @@ class HouseListViewController: UITableViewController {
         
         let cellId = "HouseCell"
         
-        // Descubir el item (casa) que tenemos que mostrar
+    // Descubir el item (casa) que tenemos que mostrar
         let house = model[indexPath.row]
         
-        // Crear una celda (o que nos la den del caché)
+    // Crear una celda (o que nos la den del caché)
         var cell = tableView.dequeueReusableCell(withIdentifier: cellId)
         if cell == nil {
             cell = UITableViewCell(style: .default, reuseIdentifier: cellId)
         }
         
-        // Sincronizar celda (view) y casa (model)
+    // Sincronizar celda (view) y casa (model)
         cell?.imageView?.image = house.sigil.image
         cell?.textLabel?.text = house.name
         
-        // Devolver la celda
+    // Devolver la celda
         return cell!
     }
     
@@ -71,27 +71,25 @@ class HouseListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // Averiguar la casa en cuestion
+    // Averiguar la casa en cuestion
         let house = model[indexPath.row]
         
-        //Crear el controlador del detalle de esa casa
+    //Crear el controlador del detalle de esa casa
         let houseDetailViewController = HouseDetailViewController(model : house)
         
-        // Push
+    // Push
         navigationController?.pushViewController(houseDetailViewController, animated: true)
         
-        // SIEMPRE emitir la informacion a traves de los dos metodos: delegates y notifications
-        // Avisar/Informar al delegado
+    // SIEMPRE emitir la informacion a traves de los dos metodos: delegates y notifications
+    // Avisar/Informar al delegado
         delegate?.houseListViewController(self, didSelectHouse: house)
         
-        // Enviar una notificacion
+    // Enviar una notificacion
         let nc = NotificationCenter.default
         let notification = Notification(name: Notification.Name(HouseDidChangeNotificationName), object: self, userInfo: [HouseKey : house])
         nc.post(notification)
         
-       
-        
-        //Guardamos la ultima casa seleccionada
+    //Guardamos la ultima casa seleccionada
         saveLastSelectedHouse(at: indexPath.row)
     }
 }
@@ -103,8 +101,8 @@ extension HouseListViewController: HouseListViewControllerDelegate {
       
     }
 }
-//MARK . - Persistence (UserDeafaluls) // Solo sirve para persistir pequeñas cantidades e objetos
-//Los objetos tienen que ser sencillos: String, Array, Int
+    //MARK . - Persistence (UserDeafaluls) // Solo sirve para persistir pequeñas cantidades e objetos
+    //Los objetos tienen que ser sencillos: String, Array, Int
 
 extension HouseListViewController{
             

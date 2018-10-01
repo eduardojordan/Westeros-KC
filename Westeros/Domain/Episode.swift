@@ -10,14 +10,12 @@ import Foundation
 
 final class Episode {
 
-    // Mark: - Properties
+// Mark: - Properties
     
     let title: String
     let dateRelease : Date
     weak var season : Season?
     
-    //-->Probar  Season??
- 
     
     init(title: String, dateRelease: String, season: Season){
         self.title = title
@@ -31,7 +29,7 @@ final class Episode {
     }
 }
 
-// Mark: Protocols
+  // Mark: Protocols
 
 extension Episode{
     var proxyForEqual: String {

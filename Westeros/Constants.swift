@@ -9,8 +9,11 @@
 import Foundation
 
 let HouseDidChangeNotificationName = "HouseDidChange"
+let EpisodeDidChangeNotificationName = "EpisodeDidChange"
 let SeasonDidChangeNotificationName = "SeasonDidChange"
 let HouseKey = "HouseKey"
 let SeasonKey = "SeasonKey"
+let EpisodeKey = "EpisodeKey"
 let lastHouseKey = "lastHouseKey"
 let lastSeasonKey = "lastSeasonKey"
+let lastEpisodeKey = "lastEpisodeKey"

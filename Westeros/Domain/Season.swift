@@ -17,13 +17,8 @@ final class Season {
     let name: String
     private var  _episodes: Episodes
     let releaseDate: Date
-   
-    
-   
     
     //La falta de Este WEAK me hizo remplantearme todo , uno y otra vez !!!! jodo, pensaba que tenia algo mal en los demas codigos
-  
-    
     
     init(name: String, episodes: Episodes = Episodes(), releaseDate: String){
         self.name = name

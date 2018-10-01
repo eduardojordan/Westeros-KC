@@ -39,8 +39,6 @@ protocol SeasonFactory{
 
 final class LocalFactory: HouseFactory , SeasonFactory{
     
-    
-   
     var houses: [House] {
         
         // Houses creation here
@@ -73,7 +71,7 @@ final class LocalFactory: HouseFactory , SeasonFactory{
         return [starkHouse, lannisterHouse, targaryenHouse].sorted()
     }
     
-    //Filter House
+         //Filter House
     
     func house(named name: String) -> House? {
         //        return houses.filter { $0.name.uppercased() == name.uppercased() }.first
@@ -84,7 +82,7 @@ final class LocalFactory: HouseFactory , SeasonFactory{
         return houses.filter(filteredBy)
     }
     
-    // Filter Season
+          // Filter Season
     func season(named name: String) -> Season? {
         return seasons.first { $0.name.uppercased() == name.uppercased() }
     }
@@ -94,12 +92,11 @@ final class LocalFactory: HouseFactory , SeasonFactory{
         
     }
     
-        // Mark: Season repository
+        // Mark: Season Repository
 
 //Season Created
 
 var seasons: [Season]{
-    
 
     let season1 = Season(name: "Season 1", releaseDate: "2011-04-17")
     let season2 = Season(name: "Season 2", releaseDate: "2012-04-01")
@@ -114,7 +111,6 @@ var seasons: [Season]{
  //Add episodes a Season
   //  var arrayEpisodes = [Episode]()
 
-    
 
 //Episode Creation
 

@@ -9,25 +9,21 @@
 import UIKit
 
 class EpisodeDetailViewController: UIViewController {
-    
-    
 
-    
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var xlabel: UILabel!
     
     //Mark: Properties
-    var model: Episode
+    private var model: Episode
     
     //Mark: Initialization
     init(model: Episode){
         self.model = model
-        
         super.init(nibName: nil, bundle:nil)
         
-        title = model.title
+     
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -37,21 +33,32 @@ class EpisodeDetailViewController: UIViewController {
 
     //Mark: Cycle-life
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-// Sincronizar Modelo & Vista
+    override func viewDidLoad() {
+        super.viewDidLoad()
         syncModel()
-        
-        
     }
+
+        
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewDidDisappear(animated)
+            // Baja en la notificación
+            let notificationCenter = NotificationCenter.default
+            notificationCenter.removeObserver(self)
+        }
+        
+        // Mark: - Notifications
+        @objc func seasonDidChange(notification: Notification) {
+            navigationController?.popViewController(animated: true)
+        }
+    
+    // Sincronizar Modelo & Vista
+ 
     func syncModel(){
-        titleLabel.text = "\(model.title)"
-        dateLabel.text = "\(model.dateRelease)"
+        titleLabel.text = model.title
+      //  dateLabel.text = model.dateRelease
         
         title = model.title
     }
-
 
 }
 

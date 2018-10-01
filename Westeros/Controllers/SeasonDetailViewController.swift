@@ -25,12 +25,12 @@ class SeasonDetailViewController: UIViewController {
     var model: Season
     
     //Mark: Initialization
-    init(model: Season){
-        //Limpio mi ***
+        init(model: Season){
+    //Limpio mi ***
         self.model = model
-        //LLamamos a super
+    //LLamamos a super
        super.init(nibName:nil, bundle:nil)
-        // Si quiero uso alguna propiedad
+    // Si quiero uso alguna propiedad
      
         title = model.name
     }
@@ -39,12 +39,10 @@ class SeasonDetailViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     //Mark - Life Cycle
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-     
         syncModel()
 }
 
@@ -57,19 +55,11 @@ class SeasonDetailViewController: UIViewController {
 // ***********PENDIENTE********
                 
         // Resolver las fechas que salgan como se requiere y numero de Episodios!!
-        
-        
+
         releaseDateLabel.text = " Release Date : \(Date())"
         episodeLabel.text = "Number of Episodes: \(model.count)"
     }
 
-    func setupUI(){
-        //Crear Botones
-        
-        //Añadir Botones
-        
-        
-    }
     
 }
 extension SeasonDetailViewController: SeasonListViewControllerDelegate{
